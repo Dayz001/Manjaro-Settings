@@ -17,6 +17,23 @@ select yn in "Yes" "No";do
     esac
 done
 
+echo "@) Vim : Simple and powerfull editor "
+select yn in "Yes" "No";do
+    case $yn in
+        Yes ) sudo pacman -S vim; break;;
+        No ) break;;
+    esac
+done
+
+echo "@) gedit  "
+select yn in "Yes" "No";do
+    case $yn in
+        Yes ) sudo pacman -S gedit; break;;
+        No ) break;;
+    esac
+done
+
+
 echo "@) Batterymon : A simple battery monitor tray 
 icon using acpi "
 select yn in "Yes" "No";do
@@ -25,6 +42,15 @@ select yn in "Yes" "No";do
         No ) break;;
     esac
 done
+
+echo "@) ssh : "
+select yn in "Yes" "No";do
+    case $yn in
+        Yes ) sudo pacman -S openssh; break;;
+        No ) break;;
+    esac
+done
+
 
 echo "::: Antergos dependencies ::: "
 	
