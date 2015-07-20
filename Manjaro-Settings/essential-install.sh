@@ -17,6 +17,16 @@ select yn in "Yes" "No";do
     esac
 done
 
+
+echo "@) Htop : Interactive text-mode process viewer "
+select yn in "Yes" "No";do
+    case $yn in
+        Yes ) yaourt -S htop-git; break;;
+        No ) break;;
+    esac
+done
+
+
 echo "@) Vim : Simple and powerfull editor "
 select yn in "Yes" "No";do
     case $yn in
@@ -24,6 +34,15 @@ select yn in "Yes" "No";do
         No ) break;;
     esac
 done
+
+echo "@) p7zip : 7zip compressed file archiver "
+select yn in "Yes" "No";do
+    case $yn in
+        Yes ) sudo pacman -S p7zip; break;;
+        No ) break;;
+    esac
+done
+
 
 echo "@) gedit  "
 select yn in "Yes" "No";do

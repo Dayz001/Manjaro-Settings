@@ -18,3 +18,10 @@ SESSION=xfce4-session ;;
   *) exec dbus-launch  DEFAULT_SESSION ;;
 esac
 
+h2. keyboard shortcut block display 
+
+modify the file /home/your_user_name/.config/awesome/rc.lua or your rc.lua path
+
+add this on "-- {{{ Key bindings":
+-- Lock screen 
+    awful.key({ modkey, "Shift" }, "Escape" ,  function() os.execute("dm-tool switch-to-greeter") end),

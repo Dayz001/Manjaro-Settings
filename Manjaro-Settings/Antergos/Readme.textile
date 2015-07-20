@@ -61,3 +61,5 @@ look at my file lightdm-webkit2-greeter.conf
 Reboot!
 
 that's all.
+#link antergos wallpaper http://antergos.org/antergos-wallpapers-0.6.zip
+Paste in /usr/share/antergos/wallpapers/
