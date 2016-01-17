@@ -2,3 +2,4 @@ FAN ISSUES:
   yaourt lm-sensors
   community/i2c-tools 3.1.1-2 
 
+sudo i2cdetect  -F 0
