@@ -1,5 +1,4 @@
 FAN ISSUES:
- GRUB_CMDLINE_LINUX_DEFAULT="resume=UUID=6a97f887-b9d0-411d-90a5-e69371273380 quiet splas$
-# cpi.power_nocheck=1  acpi_osi=Linux
+ GRUB_CMDLINE_LINUX_DEFAULT="resume=UUID=6a97f887-b9d0-411d-90a5-e69371273380 quiet splash cpi.power_nocheck=1 acpi=off"
 
 /etc/default/grub
